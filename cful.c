@@ -59,14 +59,11 @@ void one_time_print( int r, int g, int b )
 	SLEEP(2);
 }
 
-#include <stdlib.h>
 int main ( void )
 {
 	int r = 255, g = 100, b = 100;
-	char a;
 
 	cursor_view(0);
-	getc(stdin);
 	clear();
 	do {
 		while ( g < 255 ) {
@@ -104,7 +101,7 @@ int main ( void )
 			if ( b > 100 ) b--;
 		}
 		one_time_print(r, g, b);
-	} while ( 0 );
+	} while ( 1 );
 
 	return 0;
 }
