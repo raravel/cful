@@ -34,7 +34,7 @@ int _global_cful_var_use_ansi = 0;
 	} \
 } while(0)
 
-inline unsigned char rgb_ansi(unsigned char r, unsigned char g, unsigned char b)
+extern inline unsigned char rgb_ansi(unsigned char r, unsigned char g, unsigned char b)
 {
 	// 16: black, 231: white, 6: light blue, 36: blue green
 	int ansi = 16;

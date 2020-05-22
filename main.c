@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../cful.h"
+#include "cful.h"
 
 int main ( void )
 {
